@@ -78,5 +78,85 @@
     "coverUrl": "https://posters.movieposterdb.com/20_05/2019/4154796/l_4154796_2542f70b.jpg",
     "synopsis": "The Avengers assemble for one final battle to undo the damage caused by Thanos and save the universe.",
     "actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson"
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "director": "Christopher Nolan",
+    "coverUrl": "https://xl.movieposterdb.com/14_09/2014/816692/xl_816692_593eaeff.jpg",
+    "synopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "actors": "Matthew McConaughey, Anne Hathaway, Jessica Chastain"
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "director": "The Wachowskis",
+    "coverUrl": "https://xl.movieposterdb.com/05_05/1999/0133093/xl_18427_0133093_b67474af.jpg",
+    "synopsis": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss"
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "director": "Roger Allers, Rob Minkoff",
+    "coverUrl": "https://xl.movieposterdb.com/22_11/1994/323073/xl_the-lion-king-movie-poster_07016269.jpg",
+    "synopsis": "A young lion prince flees his kingdom after the murder of his father, only to learn the true meaning of responsibility.",
+    "actors": "Matthew Broderick, Jeremy Irons, James Earl Jones"
+  },
+  {
+    "title": "Titanic",
+    "year": 1997,
+    "director": "James Cameron",
+    "coverUrl": "https://xl.movieposterdb.com/05_06/1997/0120338/xl_23553_0120338_04e1bbc6.jpg",
+    "synopsis": "A young couple from different social classes fall in love aboard the ill-fated RMS Titanic.",
+    "actors": "Leonardo DiCaprio, Kate Winslet, Billy Zane"
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "director": "Frank Darabont",
+    "coverUrl": "https://xl.movieposterdb.com/05_03/1994/0111161/xl_8494_0111161_3bb8e662.jpg",
+    "synopsis": "Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.",
+    "actors": "Tim Robbins, Morgan Freeman, Bob Gunton"
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "director": "Christopher Nolan",
+    "coverUrl": "https://xl.movieposterdb.com/23_01/2010/1790736/xl_inception-the-cobol-job-movie-poster_15eafd4a.jpg",
+    "synopsis": "A thief who enters the dreams of others to steal secrets is given the task of planting an idea in someone's mind.",
+    "actors": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page"
+  },
+  {
+    "title": "Black Panther",
+    "year": 2018,
+    "director": "Ryan Coogler",
+    "coverUrl": "https://xl.movieposterdb.com/22_06/2018/1825683/xl_1825683_d608586c.jpg",
+    "synopsis": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future.",
+    "actors": "Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o"
+  },
+  {
+    "title": "Guardians of the Galaxy",
+    "year": 2014,
+    "director": "James Gunn",
+    "coverUrl": "https://xl.movieposterdb.com/14_11/2015/4176370/xl_4176370_ac42ed1b.jpg",
+    "synopsis": "A group of intergalactic criminals must pull together to stop a fanatical warrior from taking control of the universe.",
+    "actors": "Chris Pratt, Zoe Saldana, Dave Bautista"
+  },
+  {
+    "title": "Frozen",
+    "year": 2013,
+    "director": "Chris Buck, Jennifer Lee",
+    "coverUrl": "https://xl.movieposterdb.com/13_09/2013/2294629/xl_2294629_7342c9bf.jpg",
+    "synopsis": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather.",
+    "actors": "Kristen Bell, Idina Menzel, Josh Gad"
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "director": "Peter Jackson",
+    "coverUrl": "https://xl.movieposterdb.com/22_06/2001/120737/xl_120737_0ff31144.jpg",
+    "synopsis": "A meek hobbit and his companions set out on a journey to destroy a powerful ring and save Middle-earth from the Dark Lord Sauron.",
+    "actors": "Elijah Wood, Ian McKellen, Orlando Bloom"
   }
 ]

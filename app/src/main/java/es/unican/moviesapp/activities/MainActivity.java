@@ -122,7 +122,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Set-up the ListView with the Adapter created above
 
-        // TODO: find the reference to the ListView, and set its adapter
+        lvMovies.setAdapter(moviesAdapter);
+
+        // Annado el listener a la lista de películas
+        lvMovies.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Get the Movie object associated with the clicked item
+                Movie movie = shownMovies.get(position);
+
+                // Show the movie details in a popup
+                showMoviePopupDetails(movie);
+            }
+        });
     }
 
     /**
@@ -241,7 +253,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         LayoutInflater inflater = MainActivity.this.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.movie_dialog_layout, null);
 
-        // TODO fill the contents of "dialogView" with the information of the movie
+        // Obtener los widgets de la vista
+        ImageView ivCover = dialogView.findViewById(R.id.ivCover);
+        TextView tvTitle = dialogView.findViewById(R.id.tvTitle);
+        TextView tvSynopsis = dialogView.findViewById(R.id.tvSynopsis);
+        TextView tvDirector = dialogView.findViewById(R.id.tvDirector);
+        TextView tvActors = dialogView.findViewById(R.id.tvActors);
+
+        tvTitle.setText(movie.getTitle());
+        tvSynopsis.setText(movie.getSynopsis());
+        tvDirector.setText(movie.getDirector());
+        tvActors.setText(movie.getActors());
+
+        // Cargar la imagen del póster usando Picasso
+        Picasso.get().load(movie.getCoverUrl()).into(ivCover);
+
+        // Creo el alert
+        builder.setView(dialogView);
+        builder.setPositiveButton(R.string.ok, null );
+        AlertDialog dialog = builder.create();
+        dialog.show();
 
     }
 
@@ -252,9 +283,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
      * @param substring The substring to filter the movie titles, years, and directors by.
      */
     private void filterMoviesList(String substring) {
+        // Limpiar la lista de películas mostradas
+        shownMovies.clear();
 
-        // TODO filter the elements of "shownMovies" according to "substring"
+        // Si el filtro está vacío, mostrar todas las películas
+        if (substring == null || substring.isEmpty()) {
+            shownMovies.addAll(allMovies);
+        } else {
+            // Filtrar las películas cuyo título contiene el substring
+            String lowerCaseSubstring = substring.toLowerCase();
+            for (Movie movie : allMovies) {
+                if (movie.getTitle().toLowerCase().contains(lowerCaseSubstring)) {
+                    shownMovies.add(movie);
+                }
+            }
+        }
 
+        // Notificar al adapter que los datos han cambiado
+        moviesAdapter.notifyDataSetChanged();
     }
 
 }

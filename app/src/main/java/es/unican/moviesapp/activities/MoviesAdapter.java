@@ -135,9 +135,42 @@ public class MoviesAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.movies_list_item_layout, parent, false);
         }
 
-        // TODO: fill the contents of "contentView" with the information of the movie at position "position"
-        // The widgets of the view are defined in the layout file "movies_list_item_layout.xml"
 
+        // Obtener la película de la posición actual
+        Movie movie = (Movie) getItem(position);
+
+        // Obtener los widgets de la vista
+        ImageView ivCover = convertView.findViewById(R.id.ivCover);
+        TextView tvTitle = convertView.findViewById(R.id.tvTitle);
+        TextView tvYear = convertView.findViewById(R.id.tvYear);
+        TextView tvDirector = convertView.findViewById(R.id.tvDirector);
+
+        // Asignar la información de la película a los widgets
+        if (showTitle) {
+            tvTitle.setVisibility(View.VISIBLE);
+            tvTitle.setText(movie.getTitle());
+        } else {
+            tvTitle.setVisibility(View.GONE); // Oculta el título si no debe mostrarse
+        }
+
+        if (showYear) {
+            tvYear.setVisibility(View.VISIBLE);
+            tvYear.setText(String.format(Locale.getDefault(), "%d", movie.getYear()));
+        } else {
+            tvYear.setVisibility(View.GONE); // Oculta el año si no debe mostrarse
+        }
+
+        if (showDirector) {
+            tvDirector.setVisibility(View.VISIBLE);
+            tvDirector.setText(movie.getDirector());
+        } else {
+            tvDirector.setVisibility(View.GONE); // Oculta el director si no debe mostrarse
+        }
+
+        // Cargar la imagen del póster usando Picasso
+        Picasso.get().load(movie.getCoverUrl()).into(ivCover);
+
+        // Retornar la vista con la información actualizada
         return convertView;
 
     }
